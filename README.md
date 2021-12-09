@@ -1,9 +1,8 @@
 # Human-Pose-Estimation-with-MoveNet
 
 ### Setup
-1. Clone the repo from trial branch
-2. You need Python 3.7.9
-3. pip install -r requirements.txt
+1. Install Python 3.7.9
+2. pip install -r requirements.txt
 
 ### Repository contains files for human pose inference from pre-trained MoveNet.Lightning(FP16 quantized) Model
 1. Model predicts 17 human body joints referred as keypoints with their confidence scores.
