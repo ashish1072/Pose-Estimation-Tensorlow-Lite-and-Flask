@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<h2 style="text-align: center;">
+   Estimate Pose with Captured Image or Video Stream 
+</h2>
+
+<div style="justify-content: center; display: flex; margin-top: 5px;">
+    <img src="{{ url_for('video_stream1') }}">
+</div>
+
+<div style="justify-content: center; display: flex;">
+    <form action = "/process_image" method = "POST">
+        <input type = "submit" value = "capture_image"/>
+    </form>
+    <form action = "/video_stream2" method = "POST">
+        <input type = "submit" value = "video_stream"/>
+    </form>
+</div>
+
+{% endblock %}

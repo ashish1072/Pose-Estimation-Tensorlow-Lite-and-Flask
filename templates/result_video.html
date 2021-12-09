@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<h2 style="text-align: center;">
+    Estimated Pose with MoveNet on Video Stream 
+</h2>
+
+<div style="justify-content: center; display: flex; margin-top: 5px;">
+    <img src="{{ url_for('model_output_video') }}">
+</div>
+
+<div style="justify-content: center; display: flex;">
+    <input type = "button" value = "Go Back!" onclick = "history.back()"/>
+</div>
+
+{% endblock %}
