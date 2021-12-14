@@ -72,5 +72,5 @@ def model_output_video():
     return Response(process_video(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=False, port=80)
+    app.run()
 
