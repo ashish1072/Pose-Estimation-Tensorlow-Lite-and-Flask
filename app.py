@@ -3,7 +3,7 @@ from utils import *
 import os
 
 app=Flask(__name__)
-camera_feed = cv2.VideoCapture(0)
+camera_feed = cv2.VideoCapture(-1)
 
 @app.route('/')
 def index():
