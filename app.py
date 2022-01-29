@@ -37,7 +37,7 @@ def process_image():
 def model_output_image():
     global output_frame
     global FLAG
-    FLAG = 0
+    #FLAG = 0
     # call MoveNet model
     keypoint_data = movenet(output_frame)
     image = display(keypoint_data, output_frame)
